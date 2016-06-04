@@ -9,8 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
+    @IBOutlet weak var myName:UIImageView!
+    @IBOutlet weak var bg:UIImageView!
+    @IBOutlet weak var myBtn:UIButton!
+        override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -19,7 +21,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    @IBAction func myfunction(sender:AnyObject){
+        
+        myBtn.hidden=true
+        myName.hidden=false
+        bg.hidden=false
+    }
 
 }
 
