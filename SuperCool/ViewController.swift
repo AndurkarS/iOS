@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    //Added this comment to test git
     @IBAction func myfunction(sender:AnyObject){
         
         myBtn.hidden=true
